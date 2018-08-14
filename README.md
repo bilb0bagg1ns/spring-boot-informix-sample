@@ -13,3 +13,7 @@ https://www.mkyong.com/spring-boot/spring-boot-jdbc-mysql-hikaricp-example/
 Uses default Tomcat JDBC Connection Pool
 
 Simple sample that uses JDBCTemplate to retrieve some data from a informix database.
+
+# Execution
+
+Run SpringBootInformixSampleApplication 
