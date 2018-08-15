@@ -15,14 +15,9 @@
         <appender-ref ref="STDOUT"/>
     </logger>
 
-    <logger name="com.informix" level="error" additivity="false">
+    <logger name="com.bizapp" level="info" additivity="false">
         <appender-ref ref="STDOUT"/>
     </logger>
-
-    <logger name="org.hibernate.SQL" level="debug" additivity="false">
-        <appender-ref ref="STDOUT"/>
-    </logger>
-
 
     <root level="error">
         <appender-ref ref="STDOUT"/>

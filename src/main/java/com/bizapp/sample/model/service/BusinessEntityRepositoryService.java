@@ -27,12 +27,15 @@ public class BusinessEntityRepositoryService {
 		return businessEntityRepository.exists(entityId);
 	}
 
-	public Stream<BusinessEntity> findByPartialEntityName(String entityName) {
-		Stream<BusinessEntity> stream = businessEntityRepository.findByPartialEntityName(entityName);
-		return stream;
+	public List<BusinessEntity> findByPartialEntityName(String entityName) {
+		System.out.println("--------> Inside BusinessEntityRepositoryService::findByPartialEntityName");
+
+		List<BusinessEntity> list = businessEntityRepository.findByPartialEntityName(entityName);
+		return list;
 	}
 
 	public List<BusinessEntity> findByEntityName(String entityName) {
+		System.out.println("--------> Inside BusinessEntityRepositoryService::findByEntityName");
 		List<BusinessEntity> list = businessEntityRepository.findByEntityName(entityName);
 		return list;
 	}

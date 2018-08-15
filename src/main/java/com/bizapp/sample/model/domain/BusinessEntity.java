@@ -10,6 +10,7 @@ import javax.persistence.Table;
 public class BusinessEntity {
 
 	@Id
+	@Column(name = "entity_id")
 	long entityId;
 	@Column(name = "entity_nm")
 	String entityName;
